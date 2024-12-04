@@ -7,8 +7,8 @@
     },
     "collection_params": { "index_options": { "m": 16, "ef_construction": 100 } },
     "search_params": [
-      { "parallel": 1, "config": { "num_candidates": 128 } }, { "parallel": 1, "config": { "num_candidates": 256 } }, { "parallel": 1, "config": { "num_candidates": 512 } },
-      { "parallel": 100, "config": { "num_candidates": 128 } }, { "parallel": 100, "config": { "num_candidates": 256 } }, { "parallel": 100, "config": { "num_candidates": 512 } }
+      { "parallel": 1, "config": { "num_candidates": 128 } }, { "parallel": 1, "config": { "num_candidates": 256 } },
+      { "parallel": 8, "config": { "num_candidates": 128 } }, { "parallel": 8, "config": { "num_candidates": 256 } } 
     ],
     "upload_params": { "parallel": 16 }
   },

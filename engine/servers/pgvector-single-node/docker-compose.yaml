@@ -11,9 +11,9 @@ services:
       - POSTGRES_HOST_AUTH_METHOD=trust
     # shared_buffers should be 25% of memory
     # maintenance_work_mem should be ~65%
-    command: postgres -c shared_buffers=6GB -c maintenance_work_mem=16GB -c max_connections=200
+    command: postgres -c shared_buffers=3GB -c maintenance_work_mem=9.1GB -c max_connections=200
     # shm_size should be shared_buffers + maintenance_work_mem
-    shm_size: 22g
+    shm_size: 12.1g
     ports:
       - 5432:5432
     logging:
@@ -24,4 +24,4 @@ services:
     deploy:
       resources:
         limits:
-          memory: 25Gb
+          memory: 14Gb

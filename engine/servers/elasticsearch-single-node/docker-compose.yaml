@@ -1,8 +1,6 @@
-version: '3.5'
-
 services:
   es:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.10.2
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.16.1
     environment:
       ELASTIC_PASSWORD: "passwd"
       KIBANA_PASSWORD: "passwd"
@@ -20,4 +18,4 @@ services:
     deploy:
       resources:
         limits:
-          memory: 25Gb
+          memory: 14Gb
